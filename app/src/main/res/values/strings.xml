@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">体质健康管理系统</string>
+
+    <!--loginactivity所需要的字符串-->
+    <string name="login_username">用户名:</string>
+    <string name="login_pwd">密&#160;&#160;&#160;&#160;码:</string>
+    <string name="login_login">登&#160;&#160;录</string>
+    <string name="login_login_hint">账户</string>
+    <string name="login_pwd_hint">密码</string>
+    <string name="login_username_empty">用户名不能为空!</string>
+    <string name="login_pwd_empty">密码不能为空!</string>
+    <string name="login_title">体质健康管理系统</string>
+    <string name="login_pb_login">正在登录</string>
+    <string name="login_rb_teacher">教师</string>
+    <string name="login_rb_master">校长</string>
+    <string name="login_rb_admin">管理员</string>
+
+    <string name="result_save">保存</string>
+    <string name="load">加载中...</string>
+    <string name="exception_exit">程序异常,即将推出!</string>
+    <string name="again_exit">双击退出!</string>
+    <string name="net_not_connection">操作失败,网络未连接!</string>
+
+    <string name="refresh_lastUpdatedLabel">最后更新时间</string>
+    <string name="refresh_pullLabel">下拉刷新..</string>
+    <string name="refresh_refreshingLabel">刷新中...</string>
+    <string name="refresh_releaseLabel">放开刷新...</string>
+
+    <string name="loadmore_lastUpdatedLabel">最后加载时间</string>
+    <string name="loadmore_pullLabel">上拉加载...</string>
+    <string name="loadmore_refreshingLabel">加载中...</string>
+    <string name="loadmore_releaseLabel">放开加载...</string>
+
+    <!--useractivity-->
+    <string name="school">学校</string>
+    <string name="user_info">个人信息</string>
+    <string name="user_school_empty">学校为空</string>
+    <string name="user_role">角色:</string>
+    <string name="user_name">姓名:</string>
+    <string name="user_last_login">上次登录时间:</string>
+
+
+    <string name="user_class_empty">班级为空</string>
+    <string name="user_program_empty">测试项目为空</string>
+    <string name="user_student_empty">学生列表为空</string>
+
+
+    <string name="submit_fail">提交失败</string>
+    <string name="submit_success">提交成功!</string>
+
+    <string name="search_hint">姓名/学号</string>
+    <string name="search_search">搜索</string>
+
+    <string name="tag"></string>
+
+    <!--schoolactivity-->
+    <string name="filer_tip">筛选</string>
+    <string name="filer_input">输入筛选关键字</string>
+
+</resources>

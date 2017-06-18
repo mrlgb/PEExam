@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/y35"
+    android:background="@drawable/recycleview_item_pressed"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/adapter_list_programs_iv_comein"
+        android:layout_width="@dimen/x20"
+        android:layout_height="@dimen/x20"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x10"
+        android:scaleType="fitXY"
+        android:src="@mipmap/comein" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/adapter_list_programs_iv_comein"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/adapter_list_programs_tv_program"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/y20"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:paddingRight="@dimen/x10"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x14" />
+
+        <RelativeLayout
+            android:id="@+id/adapter_list_programs_rl_percent"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/y20"
+            android:layout_toRightOf="@+id/adapter_list_programs_tv_name"
+            android:layout_weight="1.8">
+
+            <cn.app.peexam.view.TextProgressBar
+                android:id="@+id/adapter_list_programs_pb_percent"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/y15"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8.0dip"
+                android:progressDrawable="@drawable/progressbar_style"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/adapter_list_programs_tv_percent"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/y20"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_toRightOf="@+id/adapter_list_programs_pb_percent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/x10"
+        android:background="@color/line" />
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/y35"
+    android:background="@drawable/recycleview_item_pressed">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/adapter_list_results_tv_stuInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x20"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/adapter_list_results_tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x5"
+            android:paddingRight="@dimen/x5">
+
+            <EditText
+                android:id="@+id/adapter_list_results_et_result"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/y20"
+                android:layout_weight="1.0"
+                android:background="@drawable/edittext_selector"
+                android:digits="-+.0123456789"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/x14" />
+
+            <EditText
+                android:id="@+id/adapter_list_results_et_result1"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/y20"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_weight="1.0"
+                android:background="@drawable/edittext_selector"
+                android:digits="-+.0123456789"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/x14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/x10"
+        android:background="@color/line" />
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/activity_result_ll_save"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y28"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/activity_result_btn_save"
+                android:layout_width="@dimen/x200"
+                android:layout_height="@dimen/y25"
+                android:background="@drawable/button_result_save"
+                android:text="@string/result_save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x18" />
+
+            <cn.app.peexam.view.NiceSpinner
+                android:id="@+id/activity_result_ns_sex"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/y25"
+                android:layout_marginLeft="@dimen/x10"
+                android:gravity="center"
+                android:textSize="@dimen/x16"
+                app:backgroundSelector="@color/title"
+                app:drawableHeight="@dimen/x20"
+                app:drawableWidth="@dimen/x20"
+                app:textTint="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_result_ll_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y40"
+            android:background="@color/title"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <cn.app.peexam.view.NiceSpinner
+                    android:id="@+id/activity_result_ns_classes"
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="@dimen/y30"
+                    android:gravity="center"
+                    android:textSize="@dimen/x16"
+                    app:backgroundSelector="@color/title"
+                    app:drawableHeight="@dimen/x20"
+                    app:drawableWidth="@dimen/x20"
+                    app:textTint="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <cn.app.peexam.view.NiceSpinner
+                    android:id="@+id/activity_result_ns_program"
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="@dimen/y30"
+                    android:gravity="center"
+                    android:textSize="@dimen/x16"
+                    app:backgroundSelector="@color/title"
+                    app:drawableHeight="@dimen/x20"
+                    app:drawableWidth="@dimen/x20"
+                    app:textTint="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/activity_result_ll_save"
+            android:layout_below="@+id/activity_result_ll_spinner">
+
+            <com.jcodecraeer.xrecyclerview.XRecyclerView
+                android:id="@+id/activity_result_rv_results"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/activity_result_tv_student_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/user_student_empty"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/x18" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
